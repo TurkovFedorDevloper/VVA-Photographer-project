@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">VVA_foto</string>
+    <string name="logo">Логотип VVA</string>
+    <string name="welcom">________Авторизация________</string>
+    <string name="login">Логин</string>
+    <string name="pass_word">Пароль</string>
+    <string name="vhod">Войти</string>
+    <string name="partfol">Портфолио</string>
+    <string name="title_activity_portfolio">PortfolioActivity</string>
+    <string name="name">Введите имя</string>
+    <string name="surname">Введите фамилию</string>
+    <string name="password">Введите пароль</string>
+    <string name="e_mail">Введите почту</string>
+    <string name="phone">Введите телефон</string>
+    <string name="registration">Зарегистрироваться</string>
+    <string name="regisration_text_view">Регистрация</string>
+
+</resources>
