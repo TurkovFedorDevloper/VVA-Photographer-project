@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:background="@color/fon_register"
+    android:id="@+id/root_element"
     tools:context=".RegistrationActivity">
 
 
@@ -18,100 +20,126 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/regisration_text_view"
-            android:textColor="@color/black"
-            android:textSize="34sp"
-            android:textStyle="bold"
+            android:layout_height="50dp">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageViewVVA"
+            android:layout_width="126dp"
+            android:layout_height="123dp"
             android:layout_gravity="center"
-            android:layout_margin="8dp"
-            android:gravity="center"/>
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/logo"
+            android:foregroundGravity="top"
+            app:srcCompat="@drawable/logo_white" />
 
-        <EditText
-            android:id="@+id/editText7"
+        <ImageView
+            android:id="@+id/imageViewRegistration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:srcCompat="@drawable/registration"
+            android:contentDescription="@string/regisration_text_view" />
+
+        <EditText
+            android:id="@+id/nameRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/area_input"
             android:ems="10"
-            android:inputType="textPersonName"
             android:hint="@string/name"
-            android:importantForAutofill="no" />
-
-        <EditText
-            android:id="@+id/editText8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="textPersonName"
+            android:textColor="@color/text_input_regist"
+            android:textColorHint="@color/text_input_regist" />
+
+        <EditText
+            android:id="@+id/surnaimRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/area_input"
+            android:ems="10"
             android:hint="@string/surname"
-            android:importantForAutofill="no" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/editText10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPassword"
-                android:hint="@string/password"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:importantForAutofill="no" />
-
-            <EditText
-                android:id="@+id/editText9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPassword"
-                android:hint="@string/password"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:importantForAutofill="no" />
-
-        </LinearLayout>
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColor="@color/text_input_regist"
+            android:textColorHint="@color/text_input_regist" />
 
         <EditText
-            android:id="@+id/editText12"
+            android:id="@+id/emailRegistration"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:ems="10"
-            android:inputType="textEmailAddress"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/area_input"
             android:hint="@string/e_mail"
-            android:importantForAutofill="no" />
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/text_input_regist"
+            android:textColorHint="@color/text_input_regist" />
 
         <EditText
-            android:id="@+id/editText13"
+            android:id="@+id/passWordRegistration"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/area_input"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColor="@color/text_input_regist"
+            android:textColorHint="@color/text_input_regist" />
+
+
+        <EditText
+            android:id="@+id/phoneRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/area_input"
             android:ems="10"
-            android:inputType="phone"
             android:hint="@string/phone"
-            android:importantForAutofill="no" />
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:textColor="@color/text_input_regist"
+            android:textColorHint="@color/text_input_regist" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/userRegistrationButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="@string/registration"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:background="@color/colorAccent"
             android:onClick="registrationUser"
-            tools:ignore="OnClick" />
+            android:text="@string/registration"
+            android:textColor="@color/white" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

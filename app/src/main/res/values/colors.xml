@@ -4,4 +4,13 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="fon_register">#1D1C1C</color>
+    <color name="area_input">#2E2D2D</color>
+    <color name="text_input_regist">#5C5959</color>
+    <color name="test">#807C7C</color>
+    <color name="button_input">#D7FF4483</color>
+    <color name="inherit">#BE3D3D36</color>
+    <color name="input_area_sign">#817C7C</color>
+    <color name="text_input_area_sign">#DFD9D9</color>
 </resources>

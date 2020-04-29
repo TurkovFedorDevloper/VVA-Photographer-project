@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "914013511283",
+    "firebase_url": "https://vva-photographer.firebaseio.com",
+    "project_id": "vva-photographer",
+    "storage_bucket": "vva-photographer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914013511283:android:347c63c2871c4dd3bf5406",
+        "android_client_info": {
+          "package_name": "com.fotographer.vva_foto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914013511283-l1dbmv9fkrjjho20gj3eplvsbnh6oi6j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fotographer.vva_foto",
+            "certificate_hash": "6a6c4cc513231eac5df065578a1105420c9887a3"
+          }
+        },
+        {
+          "client_id": "914013511283-5f8sht66l7qd56aalvt3b38bb45as8gm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6505paO2XdDI8G7mFBDC9SXHi62p2mvI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914013511283-5f8sht66l7qd56aalvt3b38bb45as8gm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

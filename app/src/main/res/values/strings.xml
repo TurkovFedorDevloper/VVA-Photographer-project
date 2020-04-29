@@ -1,18 +1,42 @@
 <resources>
-    <string name="app_name">VVA_foto</string>
-    <string name="logo">Логотип VVA</string>
-    <string name="welcom">________Авторизация________</string>
+    <string name="app_name">VVA Photographer</string>
+    <string name="logo" translatable="false">Логотип VVA</string>
+    <string name="welcom">Авторизация</string>
     <string name="login">Логин</string>
     <string name="pass_word">Пароль</string>
     <string name="vhod">Войти</string>
-    <string name="partfol">Портфолио</string>
+    <string name="partfol">Посмотреть портфолио</string>
     <string name="title_activity_portfolio">PortfolioActivity</string>
-    <string name="name">Введите имя</string>
-    <string name="surname">Введите фамилию</string>
-    <string name="password">Введите пароль</string>
-    <string name="e_mail">Введите почту</string>
-    <string name="phone">Введите телефон</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="password">Пароль</string>
+    <string name="e_mail" translatable="false">E-mail</string>
+    <string name="phone">Телефон</string>
     <string name="registration">Зарегистрироваться</string>
     <string name="regisration_text_view">Регистрация</string>
+    <string name="add_date">Добавить дату</string>
+    <string name="add_photo">Добавить фото в портфолио</string>
+    <string name="select_photo">Выбрать фото</string>
+    <string name="title">Title</string>
+    <string name="upload_photo">upload photo</string>
+    <string name="button_choose_image">Выбрать фото</string>
+    <string name="title_photo">Описание фотографии</string>
+    <string name="upload_in_firebase">Добавить в портфолио</string>
+    <string name="portfolio_upload_image_view">Портфолио</string>
+    <string name="image_choosed">Image_choosed</string>
+    <string name="title_activity_user_test_acaunt">UserTestAcaunt</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
 
 </resources>

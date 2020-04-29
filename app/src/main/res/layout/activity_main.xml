@@ -3,77 +3,115 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:ignore="ExtraText">
+    android:orientation="vertical"
+    tools:ignore="ExtraText,InvalidId"
+    android:id="@+id/rootMA"
+    android:background="@color/fon_register">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/partfol"
-        android:textColor="@color/black"
-        android:layout_gravity="end"
-        android:layout_margin="8dp"
-        android:onClick="buttonOpenPortfolio"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
         android:id="@+id/imageViewVVA"
+        android:layout_width="126dp"
+        android:layout_height="123dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/logo"
+        android:foregroundGravity="top"
+        app:srcCompat="@drawable/logo_white" />
+
+
+    <ImageView
+        android:id="@+id/imageViewAutorisation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/logo"
-        app:srcCompat="@drawable/logo" />
+        android:layout_gravity="bottom"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/welcom"
+        app:srcCompat="@drawable/autorisation" />
 
+    <EditText
+        android:id="@+id/loginSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/area_input"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:textColorHint="@color/text_input_regist"
+        android:textColor="@color/text_input_regist"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/passWordSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/area_input"
+        android:ems="10"
+        android:hint="@string/pass_word"
+        android:textColorHint="@color/text_input_regist"
+        android:textColor="@color/text_input_regist"
+        android:importantForAutofill="no"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:onClick="signInButton"
+        android:text="@string/vhod"
+        android:textColor="@color/white"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/portfolio"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:gravity="center"
         android:layout_gravity="center"
-        android:text="@string/welcom"
-        android:textColor="@color/black"
-        android:textDirection="firstStrong"
-        android:textSize="27sp"
-        android:textStyle="italic" />
+        android:layout_marginBottom="8dp"
+        android:importantForAutofill="no"
+        android:onClick="openPortfolio"
+        android:text="@string/partfol"
+        android:textColor="@color/white"
+        tools:ignore="LabelFor,SmallSp" />
 
-    <EditText
-        android:id="@+id/editTextLogin"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/login"
-        android:importantForAutofill="no" />
-
-    <EditText
-        android:id="@+id/editTextPassWord"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="@string/pass_word"
-        android:importantForAutofill="no" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:onClick="buttonSignIn"
-        android:text="@string/vhod" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:onClick="toRegister"
         android:text="@string/registration"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:onClick="buttonToRegister"/>
+        android:textColor="@color/white" />
 
 
 </LinearLayout>
