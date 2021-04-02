@@ -13,10 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".TestFireBaseGetDataUser"></activity>
+        <activity android:name=".AddDateCalendarAdmin" />
+        <activity android:name=".NavigationAdminActivity" />
         <activity
-            android:name=".UserTestAcaunt"
+            android:name=".UserTestAccount"
             android:label="@string/title_activity_user_test_acaunt"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".AdminActivity" />
         <activity android:name=".UserActivity" />
         <activity
@@ -24,7 +27,7 @@
             android:theme="@style/RegistrationTheme" />
         <activity
             android:name=".PortfolioActivity"
-            android:theme="@style/RegistrationTheme" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/RegistrationTheme">

@@ -1,16 +1,31 @@
 package com.fotographer.vva_foto.Models;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class User {
-    private String name, surname, email, password, phone;
+    private String email, name, password, phone, surname;
+    private DatabaseReference mDatabase;
+    public User() {
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+    }
 
-    public User() {}
+    public User(User user){
+        this.email = user.getEmail();
+        this.name = user.getName();
+        this.password = user.getPassword();
+        this.phone = user.getPhone();
+        this.surname = user.getPhone();
+    }
 
-    public User(String name, String surname, String email, String password, String phone) {
+
+    public User(String email, String name, String password, String phone, String surname) {
         this.name = name;
         this.surname = surname;
         this.email = email;
         this.password = password;
         this.phone = phone;
+
     }
 
     public String getName() {

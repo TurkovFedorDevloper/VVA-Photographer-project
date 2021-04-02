@@ -84,6 +84,7 @@ public class RegistrationActivity extends AppCompatActivity {
                         user.setPassword(password.getText().toString());
                         user.setPhone(phone.getText().toString());
 
+
                         users.child(Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid())
                                 .setValue(user)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {

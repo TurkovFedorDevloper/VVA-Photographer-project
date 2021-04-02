@@ -13,7 +13,6 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.fotographer.vva_foto.R;
-import com.fotographer.vva_foto.UserTestAcaunt;
 
 public class HomeFragment extends Fragment {
 
